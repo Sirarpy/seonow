@@ -1,0 +1,748 @@
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header, section, footer {
+    width: 100%;
+    border-right:  1px solid grey;
+}
+
+
+@font-face {
+    font-family: AvenirReg;
+    src: url("../fonts/AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+    font-family: RobotoBold ;
+    src: url("../fonts/RobotoSlab-bold.ttf");
+}
+
+@font-face {
+    font-family: AvenirBold ;
+    src: url("../fonts/AvenirNextLTPro-Bold.otf");
+}
+
+ul, li, p {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+header {
+    background: url("../images/header_back.jpg") no-repeat center top / cover;
+    height: 710px;
+    color: white;
+    position: relative;
+}
+
+.layer {
+    background-image: linear-gradient(to left top, #333399, rgba(229, 7, 197, 0.9));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/********************start header first navigation area*****************/
+.header_navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
+.header_navigation a {
+    color: white;
+}
+
+.header_navigation_logo {
+    width: 17%;
+}
+
+.header_navigation_logo img,
+.header_navigation_logo a {
+    display: inline-block;
+    float: left;
+    font-family: RobotoBold;
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.header_navigation_logo img {
+    margin: 0 5px 0 15px;
+    width: 30%;
+}
+
+nav {
+    width: 60%;
+}
+
+nav ul li {
+    float: left;
+    margin: 3px 0 0 6px;
+}
+
+nav ul li a {
+    font-family: AvenirReg;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20px 13px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: rgba(173, 24, 161, 0.68);
+}
+
+.header_navigation_contact {
+    width: 20%;
+    padding-top: 20px;
+    text-align: right;
+}
+
+
+
+.header_navigation_contact p {
+    font-family: AvenirReg;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.header_navigation_contact p i {
+    padding-right: 10px;
+}
+/********************end header first navigation area*****************/
+/********************start header second info/form area*****************/
+.header_info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 40px;
+    /*height: 800px;*/
+}
+
+.header_info_left {
+    width: 50%;
+    padding-left: 15px;
+}
+
+.header_info_left h1 {
+    font-family: RobotoBold;
+    margin: 102px 0 5px 0;
+    font-size: 32px;
+    letter-spacing: 1.5px;
+}
+
+.header_info_left p {
+    font-size: 20px;
+    font-family: AvenirReg;
+    line-height: 35px;
+    letter-spacing: .5px;
+}
+
+.header_info_left button {
+    width: 232px;
+    height: 55px;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.header_info_left button a {
+    font-family: RobotoBold;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.header_info_rightForm {
+    width: 37%;
+    background-color: rgba(164, 70, 181, 0.4);
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    padding-bottom: 100%;
+
+}
+
+.header_info_rightForm form {
+    width: 90%;
+    height: 100%;
+    margin: 30px auto 0;
+}
+
+.header_info_rightForm form input,
+.header_info_rightForm form select {
+    box-sizing: border-box;
+    width: 100%;
+    height: 58px;
+    border: 1px solid rgba(185, 143, 202, 0.32);
+    border-radius: 10px;
+    background-color: #3e0a460f;
+    margin-bottom: 13px;
+    color: #b98fca;
+    padding-left: 20px;
+    font-size: 15px;
+    outline: none;
+    letter-spacing: 1.5px;
+}
+.header_info_rightForm form select{
+    margin-bottom: 5px;
+}
+.header_info_rightForm form input::placeholder,
+.header_info_rightForm form select::placeholder {
+    color: #b98fca;
+}
+
+.header_info_rightForm form input:last-child {
+    background-color: #b411b6;
+    margin-top: 23px;
+    font-size: 15px;
+    font-family: AvenirBold;
+    text-transform: uppercase;
+}
+
+header img.headerWave {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    filter: drop-shadow(0px -7px 5px rgba(0, 0, 0, 0.2));;
+}
+
+/********************end header second info/form area*****************/
+/********************start seo solutions area*****************/
+.seo_solution {
+    width: 100%;
+    /*height: 870px;*/
+    text-align: center;
+}
+
+.title {
+    margin: 70px auto 0;
+    width: 80%;
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 23px;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    font-family: RobotoBold;
+    letter-spacing: 2px;
+    background: -webkit-linear-gradient(#e507c5, #333399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title p {
+    font-size: 18px;
+    font-family: AvenirReg;
+    line-height: 28px;
+}
+
+.title p span {
+    font-weight: bold;
+}
+
+.seo_solution .solution_percent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.seo_solution .solution_percent div {
+    width: calc(100% / 3);
+    max-height: 315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.seo_solution .solution_percent div:nth-child(2) {
+    /*box-shadow: -4px 0px 20px -14px #aaaaaa6b;*/
+    box-shadow: 25px 0 20px -35px rgba(0, 0, 0, 0.2), -13px 0 30px -30px rgba(0, 0, 0, 0.2);
+}
+
+.seo_solution .solution_percent div p {
+    font-size: 20px;
+    font-family: AvenirReg;
+}
+
+.seo_solution .solution_percent div p span {
+    display: block;
+    background: -webkit-linear-gradient(-225deg, #333399, #e507c5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 75px;
+    font-family: RobotoBold
+}
+
+.seo_solution .solution_button {
+    width: 100%;
+    text-align: center;
+    margin: 150px auto 70px;
+}
+
+.solution_button button {
+    width: 32%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, #e507c5, #333399);
+}
+
+.solution_button button a {
+    text-transform: uppercase;
+    font-size: 17px;
+    color: white;
+    font-family: AvenirBold;
+}
+
+/********************end seo solutions area*****************/
+/********************start seo analise area*****************/
+.analise_section {
+    height: 405px;
+    width: 100%;
+    background: url("../images/analise_back.jpg") no-repeat center top / cover;
+    position: relative;
+}
+
+.analise_section img.sectWave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.analise_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 90%;
+}
+
+.analise_content h2 {
+    margin-top: 50px;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: RobotoBold;
+    letter-spacing: 3px;
+}
+
+.analise_content p {
+    font-size: 20px;
+    font-family: AvenirReg;
+    letter-spacing: 1px;
+    /*margin: 45px 0 0;*/
+}
+
+.analise_content button {
+    width: 32%;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-top: 40px;
+}
+
+.analise_content button a {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    font-family: AvenirBold;
+    letter-spacing: 1px;
+}
+
+/********************end seo analise area*****************/
+/********************start seo service area*****************/
+
+.service_items {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service_items div {
+    text-align: left;
+    box-sizing: border-box;
+    width: calc(100% /3);
+    height: 290px;
+    padding: 50px 0 0 50px;
+}
+
+.service_items div:nth-child(1) {
+    box-shadow: 35px 35px 10px -33px rgba(0, 0, 0, 0.2);
+}
+
+.service_items div:nth-child(3) {
+    box-shadow: -35px 35px 10px -33px rgba(0, 0, 0, 0.2);
+}
+
+.service_items div:nth-child(5) {
+    box-shadow: 35px -35px 10px -35px rgba(0, 0, 0, 0.2), -36px -35px 10px -35px rgba(0, 0, 0, 0.2);
+}
+
+.service_items div img {
+    margin-bottom: 20px;
+    width: 17%;
+}
+
+.service_items div a {
+    font-family: AvenirBold;
+    font-size: 15px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.service_items div p {
+    font-family: AvenirReg;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+/********************end seo service area*****************/
+.service_content {
+    text-align: center;
+    width: 100%;
+}
+
+.service_content button {
+    width: 32%;
+    height: 60px;
+    margin: 41px auto 70px;
+    border-radius: 5px;
+    border: solid 1px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(to right, #e507c5, #333399);
+    background-origin: border-box;
+    /*background-clip: content-box, border-box;*/
+    box-shadow: 2px 1000px 1px #fff inset;
+
+}
+
+.service_content button a {
+    text-transform: uppercase;
+    font-size: 15px;
+    background: -webkit-linear-gradient(#e507c5, #333399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: AvenirBold;
+    letter-spacing: 1px;
+}
+
+.seo_special {
+    width: 100%;
+    height: 330px;
+    background: url("../images/specialist_back.png") no-repeat center top / cover;
+    position: relative;
+}
+
+.special_content {
+    box-sizing: border-box;
+    color: white;
+    padding-left: 15px;
+}
+
+.special_content h2 {
+    font-size: 27px;
+    text-transform: uppercase;
+    font-family: RobotoBold;
+    letter-spacing: 1px;
+    padding: 70px 0 12px 0;
+    margin: 0;
+}
+
+.special_content p {
+    font-size: 21px;
+    font-family: AvenirReg;
+    letter-spacing: 1px;
+    /*margin: 45px 0 0;*/
+}
+
+.special_content button {
+    width: 32%;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-top: 45px;
+}
+
+.special_content button a {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    font-family: AvenirBold;
+    letter-spacing: 1px;
+}
+
+.seo_partner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 70px;
+}
+
+.seo_partner_leftItems {
+    width: 50%;
+}
+
+.seo_partner_leftItems h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: RobotoBold;
+    letter-spacing: 2px;
+    background: -webkit-linear-gradient(#e507c5, #333399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 110px;
+}
+
+.seo_partner_leftItems ul li {
+    box-sizing: border-box;
+    width: 95%;
+    height: 111px;
+    box-shadow: 0px 0px 35px #88888829;
+    margin-bottom: 25px;
+    padding: 30px;
+}
+
+.seo_partner_leftItems ul li img {
+    float: left;
+    display: inline-block;
+    padding-right: 15px;
+    width: 5%;
+}
+
+.seo_partner_leftItems ul li a {
+    font-size: 20px;
+    font-family: AvenirReg;
+    color: black;
+    line-height: 60px;
+}
+
+.seo_partner_rightForm {
+    width: 40%;
+}
+
+.seo_partner_rightForm form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.seo_partner_rightForm input,
+.seo_partner_rightForm select,
+.seo_partner_rightForm textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 90px;
+    border: none;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    padding-left: 30px;
+    font-size: 25px;
+    color: #cfcfcf;
+    outline: none;
+}
+
+.seo_partner_rightForm textarea {
+    height: 330px;
+    margin: 0;
+    resize: none;
+    padding: 30px;
+    font-size: 25px;
+}
+
+.seo_partner_rightForm input::placeholder,
+.seo_partner_rightForm select::placeholder,
+.seo_partner_rightForm textarea::placeholder {
+    color: #cfcfcf;
+}
+
+.seo_partner_rightForm input:nth-child(-n+4) {
+    width: 90%;
+}
+
+.partner_content {
+    text-align: center;
+    width: 100%;
+    /*height: 200px;*/
+}
+
+.partner_content button {
+    width: 555px;
+    height: 82px;
+    border-radius: 10px;
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(to right, #e507c5, #333399);
+    background-origin: border-box;
+    /*background-clip: content-box, border-box;*/
+    box-shadow: 2px 1000px 1px #fff inset;
+    margin-top: 120px;
+
+}
+
+.partner_content button a {
+    text-transform: uppercase;
+    font-size: 24px;
+    background: -webkit-linear-gradient(#e507c5, #333399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: AvenirBold;
+}
+
+/*****************start footer style/*****************/
+
+footer {
+    width: 100%;
+    background-image: linear-gradient(to left top, #339, #9c0f80);
+    position: relative;
+    margin-top: 85px;
+}
+
+footer + img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer_content {
+    box-sizing: border-box;
+    padding: 115px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+
+}
+
+.footer_leftSocial {
+    width: 26%;
+    margin-right: 100px;
+}
+
+.footer_logo img,
+.footer_logo a {
+    display: inline-block;
+    float: left;
+    font-family: RobotoBold;
+    font-size: 36px;
+    line-height: 73px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.footer_logo img {
+    padding-right: 10px;
+}
+
+.footer_leftSocial p {
+    display: inline-block;
+    font-size: 25px;
+    font-family: AvenirReg;
+    margin: 20px 0 35px;
+    line-height: 35px;
+}
+
+.footer_socialContact a {
+    display: inline-block;
+    font-size: 36px;
+    margin-right: 25px;
+    color: white;
+}
+
+.footer_rightMenu {
+    text-transform: uppercase;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_rightMenu div {
+    width: 33%;
+}
+
+.footer_rightMenu div ul li a {
+    color: black;
+    font-size: 28px;
+}
+
+.footer_rightMenu div ul li {
+    padding-bottom: 20px;
+    font-family: AvenirReg;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+.footer_rightMenu div ul li:first-child {
+    font-family: RobotoBold;
+    font-size: 28px;
+    padding-bottom: 25px;
+    background: -webkit-linear-gradient(#e507c5, #333399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer_bottomRights {
+    color: white;
+    height: 100px;
+    font-family: AvenirReg;
+    overflow: hidden;
+    padding: 25px 0;
+}
+
+.footer_bottomRights p:first-child {
+    font-size: 25px;
+    float: left;
+}
+
+.footer_bottomRights p:last-child {
+    font-size: 25px;
+    float: right;
+}
+
+.footer_bottomRights p:last-child span {
+    padding-left: 50px;
+}
+
+/*****************end footer style/*****************/
+
